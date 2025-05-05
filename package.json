@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "appium": "^2.18.0"
+  },
+  "devDependencies": {
+    "@appium/images-plugin": "^3.1.2",
+    "appium-xcuitest-driver": "^9.2.3"
+  }
+}
