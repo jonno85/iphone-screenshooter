@@ -1,0 +1,17 @@
+# flows/galxe_navigation.yaml
+appId: ${MAESTRO_APP_ID} # Inherits from calling flow/environment
+---
+# Define specific steps for the Galxe app navigation
+
+# Example steps (REPLACE WITH ACTUAL GALXE INTERACTIONS using Maestro Studio)
+- tapOn: "Explore Tab" # Use text, accessibility ID, or other selectors found via Maestro Studio
+- takeScreenshot: screen_01_explore_tab
+- scroll # Scrolls down the screen
+- sleep: 1000 # Wait 1 second
+- tapOn:
+    id: "some_campaign_card_id" # Use an accessibility ID if available
+- takeScreenshot: screen_02_campaign_details
+- tapOn: "Back Button" # Assuming there's a back button element
+- takeScreenshot: screen_03_back_to_explore
+
+# Add more specific steps and screenshots as needed for Galxe...

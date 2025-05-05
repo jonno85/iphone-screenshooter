@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "appium": "^2.18.0"
+    "appium": "^2.18.0",
+    "webdriverio": "^9.12.7"
   },
   "devDependencies": {
     "@appium/images-plugin": "^3.1.2",

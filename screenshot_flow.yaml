@@ -1,0 +1,7 @@
+# screenshot_flow.yaml
+appId: ${MAESTRO_APP_ID}
+---
+- launchApp
+- takeScreenshot: initial_screen
+- tapOn: "Allow"
+- takeScreenshot: after_allow

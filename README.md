@@ -21,8 +21,10 @@ appium server
 ## run the script
 
 add the app package and name into the `APP_LIST` struct then
+N.B. the app must be already installed on the device and in case logged in / configured
+
 ```zsh
-uv run screenshot.py
+uv run ios_app_explorer/main.py  
 ```
 
 

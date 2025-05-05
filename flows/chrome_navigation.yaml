@@ -1,0 +1,16 @@
+# flows/chrome_navigation.yaml
+appId: ${MAESTRO_APP_ID} # Inherits from calling flow/environment
+---
+# Define specific steps for the Chrome app navigation
+
+# Example steps (REPLACE WITH ACTUAL CHROME INTERACTIONS using Maestro Studio)
+- tapOn: "Address bar" # Use text, accessibility ID, etc.
+- takeScreenshot: screen_01_address_bar_focused
+- inputText: "maestro.mobile.dev"
+- takeScreenshot: screen_02_url_entered
+- tapOn: "Go" # Or the keyboard return key if needed: pressKey: Enter
+- waitForAnimationToEnd:
+    timeout: 15000 # Wait longer for page load
+- takeScreenshot: screen_03_maestro_site_loaded
+
+# Add more specific steps and screenshots as needed for Chrome...
